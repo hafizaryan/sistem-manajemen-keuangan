@@ -33,7 +33,7 @@ Sistem Manajemen Keuangan adalah aplikasi sederhana yang dibangun menggunakan PH
    - Import skema database yang disediakan ke dalam database MySQL.
 
 2. **Konfigurasi:**
-   - Edit file `config.php` untuk mengonfigurasi koneksi database dan pengaturan lainnya.
+   - Edit file `koneksi.php` untuk mengonfigurasi koneksi database dan pengaturan lainnya.
 
 3. **Akses Aplikasi:**
    - Buka aplikasi melalui browser dengan mengakses URL yang sesuai dengan direktori tempat aplikasi disimpan.

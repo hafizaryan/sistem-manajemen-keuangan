@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Administrator - Sistem Informasi Keuangan Atasee</title>
+  <title>Administrator - Sistem Informasi Keuangan</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="../assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -48,7 +48,7 @@
     <header class="main-header">
       <a href="index.php" class="logo">
         <span class="logo-mini"><b><i class="fa fa-money"></i></b> </span>
-        <span class="logo-lg"><b>Keuangan</b> Atasee</span>
+        <span class="logo-lg"><b>Keuangan</b></span>
       </a>
       <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">

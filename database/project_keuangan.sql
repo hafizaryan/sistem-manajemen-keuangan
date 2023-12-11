@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2021 at 01:58 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Dec 11, 2023 at 04:19 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -34,7 +33,7 @@ CREATE TABLE `bank` (
   `bank_nomor` varchar(255) NOT NULL,
   `bank_pemilik` varchar(255) NOT NULL,
   `bank_saldo` bigint(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `bank`
@@ -55,7 +54,7 @@ CREATE TABLE `hutang` (
   `hutang_tanggal` date NOT NULL,
   `hutang_nominal` int(11) NOT NULL,
   `hutang_keterangan` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `hutang`
@@ -73,7 +72,7 @@ INSERT INTO `hutang` (`hutang_id`, `hutang_tanggal`, `hutang_nominal`, `hutang_k
 CREATE TABLE `kategori` (
   `kategori_id` int(11) NOT NULL,
   `kategori` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `kategori`
@@ -104,7 +103,7 @@ CREATE TABLE `piutang` (
   `piutang_tanggal` date NOT NULL,
   `piutang_nominal` int(11) NOT NULL,
   `piutang_keterangan` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `piutang`
@@ -128,7 +127,7 @@ CREATE TABLE `transaksi` (
   `transaksi_nominal` int(11) NOT NULL,
   `transaksi_keterangan` text NOT NULL,
   `transaksi_bank` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `transaksi`
@@ -163,16 +162,15 @@ CREATE TABLE `user` (
   `user_password` varchar(100) NOT NULL,
   `user_foto` varchar(100) DEFAULT NULL,
   `user_level` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`user_id`, `user_nama`, `user_username`, `user_password`, `user_foto`, `user_level`) VALUES
-(1, 'Ahmad Jhony', 'admin', '21232f297a57a5a743894a0e4a801fc3', '482937136_avatar.png', 'administrator'),
-(6, 'Maimun', 'manajemen', '21232f297a57a5a743894a0e4a801fc3', '', 'manajemen'),
-(7, 'samsul', 'samsul', '21232f297a57a5a743894a0e4a801fc3', '', 'administrator');
+(1, 'Hafiz Aryan Siregar', 'admin', '0192023a7bbd73250516f069df18b500', '2075570673_user.png', 'administrator'),
+(6, 'Hafiz Aryan Siregar', 'manajemen', '7839a6a91b6a99d4c29852a0beaa18c8', '', 'manajemen');
 
 --
 -- Indexes for dumped tables
